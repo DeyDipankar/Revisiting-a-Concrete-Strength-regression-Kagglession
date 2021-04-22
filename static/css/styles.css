@@ -1,0 +1,40 @@
+body {
+    background: radial-gradient(rgba(105, 176, 204, 0.8), rgba(252, 254, 255, 0.5)), url("./virginica.jpg") no-repeat fixed;
+    background-size: cover;
+
+}
+
+div {
+    margin-bottom: 5px;
+    position: relative;
+}
+
+span {
+    display: block;
+    font: Arial;
+    padding: 4px;
+    background-color: #1c755a;
+    width: 40%;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    color: seashell;
+}
+
+input[type = text]{
+    width: 40%;
+    border: rgba(23, 66, 141, 0.5);
+    padding: 4px;
+    text-indent: 45%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]{
+    background-color: #1c755a;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 2px;
+  }

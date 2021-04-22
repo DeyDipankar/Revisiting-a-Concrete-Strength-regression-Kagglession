@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concrete Strength Prediction</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <form action="{{url_for('prediction')}}" method = 'POST'>
+        <center>
+            <h2>Concrete Strength Prediction</h2>
+            <div>
+                <span>Cement</span>
+                <input type="text" name="field1" placeholder="field 1"></div>
+            <div>
+                <span>Slag</span>
+                <input type="text" name="field2" placeholder="field 2">
+            </div>
+            <div>
+                <span>Flyash</span>
+                <input type="text" name="field3" placeholder="field 3">
+            </div>
+            <div>
+                <span>Water</span>
+                <input type="text" name="field4" placeholder="field 4">
+            </div>
+            <div>
+                <span>Coarseaggregate</span>
+                <input type="text" name="field5" placeholder="field 5">
+            </div>
+            <div>
+                <span>Fineaggregate</span>
+                <input type="text" name="field6" placeholder="field 6">
+            </div>
+            <div>
+                <span>Age</span>
+                <input type="text" name="field7" placeholder="field 7">
+            </div><br><br>
+            <div>
+                <input type="submit" value="Predict">
+            </div>
+        </center>
+    </form>
+    <center>
+        <h3>Prediction</h3>
+        {%if data != None%}
+        {{data}}<h6>csMPa</h6>
+        {%endif%}
+    
+
+    </center>
+</body>
+</html>
