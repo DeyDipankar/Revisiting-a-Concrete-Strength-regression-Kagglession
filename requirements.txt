@@ -41,10 +41,6 @@ isodate==0.6.0
 itsdangerous==1.1.0
 Jinja2==2.11.2
 kiwisolver==1.2.0
-mkl-fft==1.2.0
-mkl-random==1.1.1
-mkl-service==2.3.0
-multidict==5.1.0
 numpy==1.16.4
 oauthlib==3.1.0
 olefile==0.46
